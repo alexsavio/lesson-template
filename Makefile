@@ -75,3 +75,8 @@ settings :
 unittest: tools/check.py tools/validation_helpers.py tools/test_check.py
 	cd tools/ && python2 test_check.py
 	cd tools/ && python3 test_check.py
+
+## runserver: Run a local server to check the result files
+runserver:
+	@echo Point your browser to http://localhost:8000/index.html	
+	python3 -m http.server
